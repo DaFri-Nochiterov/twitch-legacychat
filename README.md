@@ -7,8 +7,7 @@
 1. [Open this link][script_link]
 2. Click "Install"
 
-[tampermonkey_link]: https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
-[greasemonkey_link]: https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/
+[tampermonkey_link]: https://tampermonkey.net/
 [script_link]: https://github.com/DaFri-Nochiterov/twitch-legacychat/raw/master/twitch-legacychat.user.js
-[firefox_logo]: https://i.imgur.com/2950MeL.png
+[firefox_logo]: https://i.imgur.com/jTB3UGY.png
 [chrome_logo]: https://www.chromium.org/_/rsrc/1438811752264/chromium-projects/logo_chrome_color_1x_web_32dp.png
