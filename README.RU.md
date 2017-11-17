@@ -1,6 +1,17 @@
-# Установка в ![Chrome Logo][chrome_logo] Chrome или ![Firefox Logo][firefox_logo] Firefox
+# LegacyChat
 
-## С Tampermonkey
+Этот скрипт заменяет новый чат на старый, с поддержкой таких расширений как BetterTTV, FrankerFaceZ [+ аддоны к нему] и др.
+
+## Установка с Tampermonkey
+
+### Поддерживаемые браузеры
+
+- ![Chrome logo][chrome_logo] Chrome
+- ![Firefox Logo][firefox_logo] Firefox
+- ![Opera][opera_logo] Opera (начиная с 15 версии)
+- Microsoft Edge, Safari, UC Browser.
+
+### Инструкция
 
 1. [Установите расширение Tampermonkey][tampermonkey_link]
 2. [Откройте эту ссылку после установки][script_link]
@@ -9,4 +20,5 @@
 [tampermonkey_link]: https://tampermonkey.net/
 [script_link]: https://github.com/DaFri-Nochiterov/twitch-legacychat/raw/master/twitch-legacychat.user.js
 [firefox_logo]: https://i.imgur.com/jTB3UGY.png
-[chrome_logo]: https://www.chromium.org/_/rsrc/1438811752264/chromium-projects/logo_chrome_color_1x_web_32dp.png
+[opera_logo]: https://i.imgur.com/mkWyQFZ.png
+[chrome_logo]: https://i.imgur.com/iRp6o4X.png
