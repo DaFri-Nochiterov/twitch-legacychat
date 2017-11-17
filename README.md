@@ -1,4 +1,4 @@
-# Installing in ![Chrome Logo][chrome_logo] Chrome or Firefox ![Firefox Logo](firefox_logo)
+# Installing in ![Chrome Logo][chrome_logo] Chrome or Firefox ![Firefox Logo][firefox_logo]
 
 ## With Tampermonkey
 
