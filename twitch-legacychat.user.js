@@ -46,8 +46,37 @@ const init = () => {
     initChat(username);
 };
 
+const initDBLClick = () => {
+    // shitcode of adding double clicks to mention
+    const msgBox = $(".chat_text_input")[0];
+    const linesEl = $($(".chat-lines")[0]);
+
+    if (!linesEl) { return console.warn("[LegacyChat] Cannot find chat box!"); }
+
+    linesEl.on("DOMNodeInserted", "li", (e) => {
+        const target = $(e.target);
+        if (!target) { return console.warn("[LegacyChat] Wowee, stange error here. #nulTrgt"); }
+        const from = $(target.find("span.from")[0]);
+        let clicks = 0;
+        let cltmo;
+        from.on("click", () => {
+            clicks++;
+            const mention = `@${from[0].innerText}`;
+            if (!cltmo) { cltmo = setTimeout(() => { clicks = 0;
+                    cltmo = undefined; }, 1500); }
+            if ((clicks % 2) === 0) {
+                if (msgBox.value.includes(mention)) { return; }
+                msgBox.value += msgBox.value.length === 0 ? mention : ` ${mention}`;
+                setTimeout(() => $(".moderation-card__close-button").click(), 100); // closing card
+            }
+        });
+    });
+};
+
 console.info("[LegacyChat] Hello o/");
 console.info("[LegacyChat] Scheduling chat initialization in 5 seconds");
 if (!location.pathname.endsWith("/chat")) {
     setTimeout(() => init(), 5000);
+} else {
+    setTimeout(() => initDBLClick(), 5000);
 }
