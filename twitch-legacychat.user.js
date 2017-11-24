@@ -3,6 +3,7 @@
 // @version      0.9.1
 // @description  Returns legacy chat to the Twitch page.
 // @author       DaFri_Nochiterov
+// @updateURL    https://github.com/DaFri-Nochiterov/twitch-legacychat/raw/master/twitch-legacychat.user.js
 // @match        https://www.twitch.tv/*
 // @run-at       document-end
 // @grant        none
