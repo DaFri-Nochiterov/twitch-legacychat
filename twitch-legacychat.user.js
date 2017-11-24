@@ -86,7 +86,10 @@ const initDBLClick = () => {
     if (!location.pathname.endsWith("/chat")) {
         setTimeout(() => init(), 5000);
     } else {
-        if("BetterTTV" in window) { return; }
+        if("BetterTTV" in window) {
+            console.info("[LegacyChat] Detected BTTV, not going to do anything with chat");
+            return;
+        }
         setTimeout(() => initDBLClick(), 5000);
     }
 })();
