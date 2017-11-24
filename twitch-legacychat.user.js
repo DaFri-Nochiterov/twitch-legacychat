@@ -79,10 +79,13 @@ const initDBLClick = () => {
     });
 };
 
-console.info("[LegacyChat] Hello o/");
-console.info("[LegacyChat] Scheduling chat initialization in 5 seconds");
-if (!location.pathname.endsWith("/chat")) {
-    setTimeout(() => init(), 5000);
-} else {
-    setTimeout(() => initDBLClick(), 5000);
-}
+(() => {
+    console.info("[LegacyChat] Hello o/");
+    console.info("[LegacyChat] Scheduling chat initialization in 5 seconds");
+    if (!location.pathname.endsWith("/chat")) {
+        setTimeout(() => init(), 5000);
+    } else {
+        if("BetterTTV" in window) { return; }
+        setTimeout(() => initDBLClick(), 5000);
+    }
+})();
