@@ -49,8 +49,8 @@ const init = () => {
     initChat(username);
 };
 
-console.info("[LegacyChat] Hello o/");
-console.info("[LegacyChat] Scheduling chat initialization in 5 seconds");
 if (location.hostname === "www.twitch.tv" && !location.pathname.endsWith("/chat")) {
+    console.info("[LegacyChat] Hello o/");
+    console.info("[LegacyChat] Scheduling chat initialization in 5 seconds");
     setTimeout(() => init(), SLEEP_BEFORE_INIT);
 }
